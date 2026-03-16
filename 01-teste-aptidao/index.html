@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="./app.js" defer></script>
   <title>Teste de Aptidão</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -21,11 +22,11 @@
       </p>
 
       <label>Tempo (s)</label>
-      <input type="number" placeholder="Ex: 13.8" />
+      <input id="tempo" type="number" placeholder="Ex: 13.8" />
 
-      <button>Avaliar</button>
+      <button onclick="mudarCor()" id="botao">Avaliar</button>
 
-      <div class="resultado">
+      <div id="resultado" class="resultado">
         O resultado aparecerá aqui
       </div>
     </div>
